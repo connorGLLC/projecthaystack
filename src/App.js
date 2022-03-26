@@ -112,7 +112,6 @@ export default function App(ScrollToTop) {
         },
         typography: {
           fontFamily: [
-            "Montserrat",
             "Roboto",
             '"Helvetica Neue"',
             '"Segoe UI"',

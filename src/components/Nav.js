@@ -66,7 +66,7 @@ const ResponsiveAppBar = (props) => {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <ElevationScroll {...props}>
-        <AppBar position="fixed" elevation={0} style={{ ifbackground: "#fff" }}>
+        <AppBar elevation={0} style={{ ifbackground: "#fff" }}>
           <Container maxWidth="md">
             <Toolbar disableGutters>
               <Typography

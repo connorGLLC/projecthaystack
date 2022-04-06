@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.4ee93a94.chunk.css",
-    "main.js": "/static/js/main.549e05b5.chunk.js",
-    "main.js.map": "/static/js/main.549e05b5.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.63cd22fb.js",
-    "runtime-main.js.map": "/static/js/runtime-main.63cd22fb.js.map",
+    "main.js": "/static/js/main.e26e048d.chunk.js",
+    "main.js.map": "/static/js/main.e26e048d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8182a972.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8182a972.js.map",
     "static/css/2.34b29efe.chunk.css": "/static/css/2.34b29efe.chunk.css",
-    "static/js/2.4a7cfe20.chunk.js": "/static/js/2.4a7cfe20.chunk.js",
-    "static/js/2.4a7cfe20.chunk.js.map": "/static/js/2.4a7cfe20.chunk.js.map",
-    "static/js/3.ed7bca9a.chunk.js": "/static/js/3.ed7bca9a.chunk.js",
-    "static/js/3.ed7bca9a.chunk.js.map": "/static/js/3.ed7bca9a.chunk.js.map",
+    "static/js/2.5a77120a.chunk.js": "/static/js/2.5a77120a.chunk.js",
+    "static/js/2.5a77120a.chunk.js.map": "/static/js/2.5a77120a.chunk.js.map",
+    "static/js/3.e729505c.chunk.js": "/static/js/3.e729505c.chunk.js",
+    "static/js/3.e729505c.chunk.js.map": "/static/js/3.e729505c.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.34b29efe.chunk.css.map": "/static/css/2.34b29efe.chunk.css.map",
     "static/css/main.4ee93a94.chunk.css.map": "/static/css/main.4ee93a94.chunk.css.map",
-    "static/js/2.4a7cfe20.chunk.js.LICENSE.txt": "/static/js/2.4a7cfe20.chunk.js.LICENSE.txt",
+    "static/js/2.5a77120a.chunk.js.LICENSE.txt": "/static/js/2.5a77120a.chunk.js.LICENSE.txt",
     "static/media/CHSLOGO.cfe0db1a.jpg": "/static/media/CHSLOGO.cfe0db1a.jpg",
     "static/media/HTMLLOGO.23784160.png": "/static/media/HTMLLOGO.23784160.png",
     "static/media/JS.029db7d4.png": "/static/media/JS.029db7d4.png",
@@ -22,7 +22,6 @@
     "static/media/REACTLOGO.73ac128a.png": "/static/media/REACTLOGO.73ac128a.png",
     "static/media/SQL.85fb38d6.png": "/static/media/SQL.85fb38d6.png",
     "static/media/Shopify.e479b434.png": "/static/media/Shopify.e479b434.png",
-    "static/media/VikingLogo.e47008c5.jpg": "/static/media/VikingLogo.e47008c5.jpg",
     "static/media/WIXLOGO.87988ae9.png": "/static/media/WIXLOGO.87988ae9.png",
     "static/media/ZOHO.17024883.png": "/static/media/ZOHO.17024883.png",
     "static/media/banner.e6693ca7.jpg": "/static/media/banner.e6693ca7.jpg",
@@ -57,7 +56,6 @@
     "static/media/l7.52af3538.jpg": "/static/media/l7.52af3538.jpg",
     "static/media/l8.019e2209.jpg": "/static/media/l8.019e2209.jpg",
     "static/media/l9.6a1ae967.jpg": "/static/media/l9.6a1ae967.jpg",
-    "static/media/logo.2b914524.svg": "/static/media/logo.2b914524.svg",
     "static/media/p1.378c9cbb.jpg": "/static/media/p1.378c9cbb.jpg",
     "static/media/p1.6c85b3eb.jpg": "/static/media/p1.6c85b3eb.jpg",
     "static/media/p1.de9aefcd.jpg": "/static/media/p1.de9aefcd.jpg",
@@ -132,13 +130,14 @@
     "static/media/pbm.4aac2a15.jpg": "/static/media/pbm.4aac2a15.jpg",
     "static/media/pbmlogo.3524ac3c.png": "/static/media/pbmlogo.3524ac3c.png",
     "static/media/portrait.e6f6b430.jpg": "/static/media/portrait.e6f6b430.jpg",
-    "static/media/squarespace.eb3ed93a.png": "/static/media/squarespace.eb3ed93a.png"
+    "static/media/squarespace.eb3ed93a.png": "/static/media/squarespace.eb3ed93a.png",
+    "static/media/vikinglogo.e47008c5.jpg": "/static/media/vikinglogo.e47008c5.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.63cd22fb.js",
+    "static/js/runtime-main.8182a972.js",
     "static/css/2.34b29efe.chunk.css",
-    "static/js/2.4a7cfe20.chunk.js",
+    "static/js/2.5a77120a.chunk.js",
     "static/css/main.4ee93a94.chunk.css",
-    "static/js/main.549e05b5.chunk.js"
+    "static/js/main.e26e048d.chunk.js"
   ]
 }

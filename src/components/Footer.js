@@ -10,12 +10,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary" align="center">
+    <Typography p="20px" variant="body2" color="text.secondary" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="https://connorcreated.com/" target="_blank">
-        Connor Created
-      </Link>{" "}
-      {new Date().getFullYear()}
+      zSIEM {new Date().getFullYear()}
       {"."}
     </Typography>
   );
@@ -31,11 +28,11 @@ function Footer() {
           color="text.secondary"
           component="p"
         >
-          E: connor@gannaway.org
+          E: Email
           <br />
-          P: 785-806-7967
+          P: Phone
           <br />
-          <Grid
+          {/* <Grid
             item
             color="inherit"
             component={"a"}
@@ -54,18 +51,7 @@ function Footer() {
             href="https://github.com/gannacon"
           >
             <GitHubIcon color="text.secondary" />
-          </Grid>{" "}
-          <Typography variant="subtitle1">
-            Checkout this site's{" "}
-            <Link
-              variant="subtitle1"
-              color="inherit"
-              href="https://github.com/gannacon/connor-created"
-              target="_blanks"
-            >
-              repo.
-            </Link>
-          </Typography>
+          </Grid>{" "} */}
         </Typography>
 
         <Copyright />

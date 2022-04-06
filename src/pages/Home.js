@@ -8,44 +8,40 @@ import MainBanner from "./components/MainBanner";
 import RecentPosts from "./components/RecentPosts";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
+import { Container } from "@mui/material";
 
 export default function Home() {
   return (
     <>
-      <MainBanner />
-
-      <Box sx={{ width: "90%", margin: "auto" }}>
-        <Typography variant="h3">
-          Hello, my name is Connor and I create stuff.
-        </Typography>
-        <Box sx={{ m: "10px" }}>
-          <Typography variant="subtitle">
-            I’m a web developer, photographer, and engineer from Kansas City,
-            Kansas.
-            <br />
-            My passion is helping businesses establish an online presence
-            through web development and photography.
+      {/* <MainBanner /> */}
+      <Container maxWidth="md">
+        <Box sx={{ margin: "auto", paddingTop: "140px" }}>
+          <Typography align="center" variant="h3">
+            Ensure your Mainframe Security
           </Typography>
-          <br />
-          <br />
-          <br />
-          <Typography variant="subtitle">
-            This is strictly my portfolio and creative playground. If you are
-            interested in working together visit my organization's page for
-            inquiries:
+          <Typography align="center" variant="h4">
+            with zSIEM Monitoring Solution
           </Typography>
         </Box>
-
-        <Button
-          href="https://www.gannaway.org/"
-          target="blank"
-          sx={{ m: "10px" }}
-          variant="contained"
-          size="large"
-        >
-          Let's get to work
-        </Button>
-      </Box>
+        <Container align="center" maxWidth="sm">
+          <Box sx={{ mt: "10px" }}>
+            <Typography>
+              The only security & compliance platform developed specifically for
+              the z/OS operating system.
+            </Typography>
+          </Box>{" "}
+          <Button
+            position="center"
+            href=""
+            target="blank"
+            sx={{ m: "10px" }}
+            variant="contained"
+            size="large"
+          >
+            Buy Now{" "}
+          </Button>
+        </Container>
+      </Container>
 
       <RecentPosts />
     </>

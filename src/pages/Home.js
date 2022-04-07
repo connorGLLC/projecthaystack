@@ -8,6 +8,8 @@ import MainBanner from "./components/MainBanner";
 import RecentPosts from "./components/RecentPosts";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
+import Fade from "@mui/material/Fade";
+
 import { Container } from "@mui/material";
 
 export default function Home() {
@@ -16,9 +18,12 @@ export default function Home() {
       {/* <MainBanner /> */}
       <Container maxWidth="md">
         <Box sx={{ margin: "auto", paddingTop: "140px" }}>
-          <Typography align="center" variant="h3">
-            Ensure your Mainframe Security
-          </Typography>
+          <Fade in={true} timeout={3000}>
+            <Typography align="center" variant="h3">
+              Ensure your Mainframe Security
+            </Typography>
+          </Fade>
+
           <Typography align="center" variant="h4">
             with zSIEM Monitoring Solution
           </Typography>

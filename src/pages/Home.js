@@ -17,24 +17,26 @@ export default function Home() {
     <>
       {/* <MainBanner /> */}
       <Container maxWidth="md">
-        <Box sx={{ margin: "auto", paddingTop: "140px" }}>
-          <Fade in={true} timeout={3000}>
+        <Fade in={true} timeout={2000} style={{ transitionDelay: "100ms" }}>
+          <Box sx={{ margin: "auto", paddingTop: "140px" }}>
             <Typography align="center" variant="h3">
               Ensure your Mainframe Security
             </Typography>
+            <Typography align="center" variant="h4">
+              with zSIEM Monitoring Solution
+            </Typography>
+          </Box>
+        </Fade>
+        <Container align="center" maxWidth="sm">
+          <Fade in={true} timeout={2000} style={{ transitionDelay: "1000ms" }}>
+            <Box sx={{ mt: "10px" }}>
+              <Typography>
+                The only security & compliance platform developed specifically
+                for the z/OS operating system.
+              </Typography>
+            </Box>
           </Fade>
 
-          <Typography align="center" variant="h4">
-            with zSIEM Monitoring Solution
-          </Typography>
-        </Box>
-        <Container align="center" maxWidth="sm">
-          <Box sx={{ mt: "10px" }}>
-            <Typography>
-              The only security & compliance platform developed specifically for
-              the z/OS operating system.
-            </Typography>
-          </Box>{" "}
           <Button
             position="center"
             href=""

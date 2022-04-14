@@ -19,7 +19,6 @@ import CssBaseline from "@mui/material/CssBaseline";
 import logo from "../pages/assets/images/Screenshot.png";
 
 const pages = ["Products", "Pricing", "Blog"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -77,7 +76,7 @@ const ResponsiveAppBar = (props) => {
                 component="div"
                 sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
               >
-                <img src={logo} alt="My logo" height="50px" />
+                <img src={logo} alt="My logo" height="40px" />
               </Typography>
 
               <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -109,11 +108,9 @@ const ResponsiveAppBar = (props) => {
                     display: { xs: "block", md: "none" },
                   }}
                 >
-                  {pages.map((page) => (
-                    <MenuItem key={page} onClick={handleCloseNavMenu}>
-                      <Typography textAlign="center">{page}</Typography>
-                    </MenuItem>
-                  ))}
+                  <MenuItem href="/support" onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">Support</Typography>
+                  </MenuItem>
                 </Menu>
               </Box>
               <Typography
@@ -125,15 +122,20 @@ const ResponsiveAppBar = (props) => {
                 <img src={logo} alt="My logo" height="50px" />
               </Typography>
               <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-                {pages.map((page) => (
-                  <Button
-                    key={page}
-                    onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: "inherit", display: "block" }}
-                  >
-                    {page}
-                  </Button>
-                ))}
+                <Button
+                  href="/"
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "inherit", display: "block" }}
+                >
+                  Home
+                </Button>
+                <Button
+                  href="/support"
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "inherit", display: "block" }}
+                >
+                  Support
+                </Button>
               </Box>
 
               <Box sx={{ flexGrow: 0 }}>

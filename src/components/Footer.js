@@ -1,63 +1,46 @@
 import * as React from "react";
-import PropTypes from "prop-types";
+import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
-import Grid from "@mui/material/Grid";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import GitHubIcon from "@mui/icons-material/GitHub";
 
 function Copyright() {
   return (
-    <Typography p="20px" variant="body2" color="text.secondary" align="center">
+    <Typography variant="body2" color="text.secondary">
       {"Copyright © "}
-      zSIEM {new Date().getFullYear()}
+      <Link color="inherit" href="https://mui.com/">
+        zsiem{" "}
+      </Link>{" "}
+      {new Date().getFullYear()}
       {"."}
     </Typography>
   );
 }
 
-function Footer() {
+export default function StickyFooter() {
   return (
-    <Box component="footer" sx={{ bgcolor: "background.paper" }}>
-      <Container maxWidth="lg">
-        <Typography
-          variant="subtitle1"
-          align="center"
-          color="text.secondary"
-          component="p"
-        >
-          E: Email
-          <br />
-          P: Phone
-          <br />
-          {/* <Grid
-            item
-            color="inherit"
-            component={"a"}
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://www.instagram.com/gannacon/"
-          >
-            <InstagramIcon color="text.secondary" />
-          </Grid>
-          <Grid
-            item
-            color="inherit"
-            component={"a"}
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://github.com/gannacon"
-          >
-            <GitHubIcon color="text.secondary" />
-          </Grid>{" "} */}
-        </Typography>
-
-        <Copyright />
-      </Container>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "50vh",
+      }}
+    >
+      <CssBaseline />
+      <Box
+        component="footer"
+        sx={{
+          py: 3,
+          px: 2,
+          mt: "auto",
+        }}
+      >
+        <Container maxWidth="md">
+          <Typography variant="body1">zSIEM </Typography>
+          <Copyright />
+        </Container>
+      </Box>
     </Box>
   );
 }
-
-export default Footer;

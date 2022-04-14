@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Gear from "./pages/Gear";
 import Support from "./pages/Support";
+import Pricing from "./pages/Pricing";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
@@ -39,7 +40,7 @@ export default function App(ScrollToTop) {
                 // },
                 // palette values for light mode
                 primary: {
-                  light: grey[50],
+                  light: grey[500],
                   main: "#fff",
                   contrastText: "#000",
                 },
@@ -87,6 +88,7 @@ export default function App(ScrollToTop) {
       <Routes>
         <Route exact path="gear" element={<Gear />} />
         <Route exact path="support" element={<Support />} />
+        <Route exact path="pricing" element={<Pricing />} />
         {/* <Route exact path="footer" element={<Footer />} /> */}
         <Route exact path="/" element={<Home />} />
       </Routes>

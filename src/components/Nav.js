@@ -136,6 +136,13 @@ const ResponsiveAppBar = (props) => {
                 >
                   Support
                 </Button>
+                <Button
+                  href="/pricing"
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "inherit", display: "block" }}
+                >
+                  Pricing
+                </Button>
               </Box>
 
               <Box sx={{ flexGrow: 0 }}>

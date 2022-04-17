@@ -34,8 +34,8 @@ export default function SignUp() {
           alignItems: "center",
         }}
       >
-        <Typography component="h1" variant="h2">
-          Contact Us
+        <Typography component="h1" variant="h3">
+          Submit a case
         </Typography>
         <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
           <Grid container spacing={2}>
@@ -109,8 +109,10 @@ export default function SignUp() {
             </Grid>
             <Grid item xs={12}>
               <FormControlLabel
-                control={<Checkbox value="allowExtraEmails" color="primary" />}
-                label="I want to receive inspiration, marketing promotions and updates via email."
+                control={
+                  <Checkbox value="allowExtraEmails" color="secondary" />
+                }
+                label="I want to receive marketing promotions and updates via email."
               />
             </Grid>
           </Grid>

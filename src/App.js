@@ -49,7 +49,7 @@ export default function App(ScrollToTop) {
                 },
                 divider: grey[300],
                 text: {
-                  primary: grey[700],
+                  primary: grey[800],
                   secondary: grey[800],
                 },
               }
@@ -69,11 +69,11 @@ export default function App(ScrollToTop) {
         },
         typography: {
           fontFamily: [
-            "Roboto",
-            '"Helvetica Neue"',
-            '"Segoe UI"',
             "-apple-system",
             "BlinkMacSystemFont",
+            "Helvetica Neue",
+            "Segoe UI",
+            "Roboto",
             "Arial",
             "sans-serif",
             '"Apple Color Emoji"',

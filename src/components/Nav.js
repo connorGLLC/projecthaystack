@@ -18,8 +18,6 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 import CssBaseline from "@mui/material/CssBaseline";
 import logo from "../pages/assets/images/Screenshot.png";
 
-const pages = ["Products", "Pricing", "Blog"];
-
 const ResponsiveAppBar = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -137,16 +135,18 @@ const ResponsiveAppBar = (props) => {
                   Support
                 </Button>
                 <Button
-                  href="/pricing"
+                  href="/knowledge"
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: "inherit", display: "block" }}
                 >
-                  Pricing
+                  Knowledge
                 </Button>
               </Box>
 
               <Box sx={{ flexGrow: 0 }}>
-                <Button variant="contained">Buy Now</Button>
+                <Button color="secondary" variant="contained">
+                  Buy Now
+                </Button>
               </Box>
             </Toolbar>
           </Container>

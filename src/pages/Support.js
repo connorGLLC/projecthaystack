@@ -1,87 +1,150 @@
 import * as React from "react";
+import Avatar from "@mui/material/Avatar";
 import { styled, useTheme } from "@mui/material/styles";
-import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
-import TextField from "@mui/material/TextField";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
+
 import Button from "@mui/material/Button";
-
+import CssBaseline from "@mui/material/CssBaseline";
+import TextField from "@mui/material/TextField";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
 import Link from "@mui/material/Link";
+import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-export default function Support() {
-  const [value, setValue] = React.useState("Controlled");
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
+function Copyright(props) {
   return (
-    <>
+    <Typography
+      variant="body2"
+      color="text.secondary"
+      align="center"
+      {...props}
+    >
+      {"Copyright © "}
+      <Link color="inherit" href="https://mui.com/">
+        Your Website
+      </Link>{" "}
+      {new Date().getFullYear()}
+      {"."}
+    </Typography>
+  );
+}
+
+export default function SignUp() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    console.log({
+      email: data.get("email"),
+      password: data.get("password"),
+    });
+  };
+
+  return (
+    <Container component="main" maxWidth="xs">
+      <CssBaseline />
       <Box
         sx={{
-          pt: "150px",
-          justifyContent: "center",
+          marginTop: "150px",
           display: "flex",
-          flexWrap: "wrap",
-          "& > :not(style)": {
-            m: 1,
-            maxWidth: 400,
-          },
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
-        <Paper elevation={6}>
-          <Box sx={{ margin: "20px", paddingTop: "40px" }}>
-            <Typography align="center" variant="h5">
-              Please fill out the form below
-              <br></br> and we will respond within 24 hours.
-            </Typography>
-          </Box>
-          <Box
-            maxWidth="250px"
-            component="form"
-            sx={{
-              display: "flex",
-              flexWrap: "wrap",
-              margin: "auto",
-
-              pt: "50px",
-              pb: "100px",
-              "& .MuiTextField-root": { m: 1, width: "25ch" },
-            }}
-            noValidate
-            autoComplete="off"
-          >
-            <TextField
-              required
-              id="outlined-required"
-              label="Email"
-              helperText="* Indicates Required"
-            />
-            <div>
-              <TextField id="outlined-input" label="First Name" type="text" />
-            </div>
-            <div>
-              <TextField id="outlined-input" label="Last Name" type="text" />
-            </div>
-            <TextField
-              id="outlined-input"
-              label="Account Number"
-              type="accountnumber"
-            />
-            <div>
+        <Typography component="h1" variant="h5">
+          Contact Us
+        </Typography>
+        <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={6}>
               <TextField
-                id="outlined-textarea"
-                label="Message"
-                placeholder="How may we help?"
+                color="secondary"
+                autoComplete="given-name"
+                name="firstName"
+                fullWidth
+                id="firstName"
+                label="First Name"
+                autoFocus
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                color="secondary"
+                fullWidth
+                id="lastName"
+                label="Last Name"
+                name="lastName"
+                autoComplete="family-name"
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                color="secondary"
+                autoComplete="given-name"
+                name="phone"
+                required
+                fullWidth
+                id="phone"
+                label="Phone Number"
+                autoFocus
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                color="secondary"
+                fullWidth
+                id="acountnumber"
+                label="Account Number"
+                name="accountNumber"
+                autoComplete="family-name"
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                color="secondary"
+                required
+                fullWidth
+                id="email"
+                label="Email Address"
+                name="email"
+                autoComplete="email"
+              />
+            </Grid>
+
+            <Grid item xs={12}>
+              <TextField
+                color="secondary"
                 multiline
+                fullWidth
+                name="Message"
+                label="Message"
+                type="Message"
+                id="Message"
+                autoComplete="new-message"
                 rows={4}
               />
-            </div>
-          </Box>
-        </Paper>
+            </Grid>
+            <Grid item xs={12}>
+              <FormControlLabel
+                control={<Checkbox value="allowExtraEmails" color="primary" />}
+                label="I want to receive inspiration, marketing promotions and updates via email."
+              />
+            </Grid>
+          </Grid>
+          <Button
+            color="secondary"
+            type="submit"
+            fullWidth
+            variant="contained"
+            sx={{ mt: 3, mb: 2 }}
+          >
+            Sign Up
+          </Button>
+        </Box>
       </Box>
-    </>
+    </Container>
   );
 }

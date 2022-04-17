@@ -49,7 +49,7 @@ export default function App(ScrollToTop) {
                 },
                 divider: grey[300],
                 text: {
-                  primary: grey[900],
+                  primary: grey[700],
                   secondary: grey[800],
                 },
               }

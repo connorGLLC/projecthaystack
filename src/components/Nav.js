@@ -16,6 +16,7 @@ import MenuItem from "@mui/material/MenuItem";
 import PropTypes from "prop-types";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import CssBaseline from "@mui/material/CssBaseline";
+import Link from "@mui/material/Link";
 import logo from "../pages/assets/images/Screenshot.png";
 
 const ResponsiveAppBar = (props) => {
@@ -106,8 +107,24 @@ const ResponsiveAppBar = (props) => {
                     display: { xs: "block", md: "none" },
                   }}
                 >
-                  <MenuItem href="/support" onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">Support</Typography>
+                  <MenuItem onClick={handleCloseNavMenu}>
+                    <Link color="text.primary" underline="none" href="/">
+                      Home
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleCloseNavMenu}>
+                    <Link color="text.primary" underline="none" href="/support">
+                      Support
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleCloseNavMenu}>
+                    <Link
+                      color="text.primary"
+                      underline="none"
+                      href="/knowledge"
+                    >
+                      Knowledge{" "}
+                    </Link>
                   </MenuItem>
                 </Menu>
               </Box>

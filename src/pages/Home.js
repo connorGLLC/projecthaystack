@@ -38,6 +38,7 @@ export default function Home() {
           </Fade>
 
           <Button
+            color="secondary"
             position="center"
             href=""
             target="blank"

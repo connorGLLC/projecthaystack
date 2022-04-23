@@ -3,7 +3,6 @@ import * as React from "react";
 import "./App.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Gear from "./pages/Gear";
 import Support from "./pages/Support";
 import Knowledge from "./pages/Knowledge";
 import Home from "./pages/Home";
@@ -49,7 +48,7 @@ export default function App(ScrollToTop) {
                 },
                 divider: grey[300],
                 text: {
-                  primary: grey[800],
+                  primary: grey[900],
                   secondary: grey[800],
                 },
               }
@@ -89,7 +88,6 @@ export default function App(ScrollToTop) {
     <ThemeProvider theme={theme}>
       <Nav />
       <Routes>
-        <Route exact path="gear" element={<Gear />} />
         <Route exact path="support" element={<Support />} />
         <Route exact path="Knowledge" element={<Knowledge />} />
         {/* <Route exact path="footer" element={<Footer />} /> */}

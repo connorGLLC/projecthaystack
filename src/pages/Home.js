@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import MainBanner from "./components/MainBanner";
 import RecentPosts from "./components/RecentPosts";
+import About from "./About";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
 import Fade from "@mui/material/Fade";
@@ -52,6 +53,7 @@ export default function Home() {
       </Container>
 
       <RecentPosts />
+      <About />
     </>
   );
 }

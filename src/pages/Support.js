@@ -65,7 +65,6 @@ export default function SignUp() {
                 color="secondary"
                 autoComplete="given-name"
                 name="phone"
-                required
                 fullWidth
                 id="phone"
                 label="Phone Number"
@@ -77,6 +76,7 @@ export default function SignUp() {
                 color="secondary"
                 fullWidth
                 id="acountnumber"
+                required
                 label="Account Number"
                 name="accountNumber"
                 autoComplete="family-name"

@@ -10,10 +10,11 @@ import CardMedia from "@mui/material/CardMedia";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import AutoGraphIcon from "@mui/icons-material/AutoGraph";
 import Typography from "@mui/material/Typography";
-import gear1 from "./assets/images/gear1.jpg";
-import gear2 from "./assets/images/gear2.jpg";
-import gear3 from "./assets/images/gear3.jpg";
-import gear4 from "./assets/images/gear4.jpg";
+import MainframeIcon from "../assets/images/mainframeicon.png";
+import GraphIcon from "../assets/images/graph.png";
+import LockIcon from "../assets/images/lock.png";
+import TargetIcon from "../assets/images/target.png";
+
 // import gear5 from "./assets/images/gear5.jpg";
 export default function TitlebarBelowImageList() {
   const theme = useTheme();
@@ -26,67 +27,68 @@ export default function TitlebarBelowImageList() {
         margin: "auto",
       }}
     >
-      <Box
-        sx={{
-          margin: "auto",
-
-          pb: "75px",
-          [theme.breakpoints.down("md")]: {
-            pb: "100px",
-          },
-          [theme.breakpoints.down("sm")]: {
-            pb: "40px",
-          },
-        }}
-      >
-        <Divider />
-        <Typography
-          marginTop="50px"
-          marginBottom="25px"
-          align="left"
-          variant="h4"
+      <Box sx={{ marginBottom: "200px" }}>
+        <Box
+          sx={{
+            margin: "auto",
+            pb: "75px",
+            [theme.breakpoints.down("md")]: {
+              pb: "100px",
+            },
+            [theme.breakpoints.down("sm")]: {
+              pb: "40px",
+            },
+          }}
         >
-          What is zSIEM?{" "}
-        </Typography>
-        <Typography flex="left" variant="h7">
-          zSIEM helps clients collect, in real-time, information pertaining to
-          security events, database related events, transaction processing
-          events and more. The technology pinpoints, filters, collects, reports
-          mainframe events and then makes the events available to all major SIEM
-          technologies.
-        </Typography>
-      </Box>
-      <Grid
-        container
-        spacing={{ xs: 2, md: 3 }}
-        columns={{ xs: 4, sm: 8, md: 12 }}
-      >
-        <Grid item xs={2} sm={3} md={3}>
-          <Card
-            elevation="6"
-            sx={{ borderRadius: 3, height: "275px", maxWidth: 345 }}
+          <Divider />
+          <Typography
+            marginTop="200px"
+            marginBottom="25px"
+            align="left"
+            variant="h4"
           >
-            <AutoGraphIcon sx={{ fontSize: "large" }} />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                SIEM Growth
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Enterprises that are implementing Security Information and Event
-                Management (SIEM) realize the importance of visibility into the
-                mainframe.
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={2} sm={3} md={3}>
-          <Card elevation="6" sx={{ borderRadius: 3, maxWidth: 345 }}>
-            <CardActionArea>
+            What is zSIEM?{" "}
+          </Typography>
+          <Typography flex="left" variant="h7">
+            zSIEM helps clients collect, in real-time, information pertaining to
+            security events, database related events, transaction processing
+            events and more. The technology pinpoints, filters, collects,
+            reports mainframe events and then makes the events available to all
+            major SIEM technologies.
+          </Typography>
+        </Box>
+        <Grid
+          container
+          spacing={{ xs: 2, md: 3 }}
+          columns={{ xs: 4, sm: 8, md: 12 }}
+        >
+          <Grid item xs={2} sm={3} md={3}>
+            <Card elevation="6" sx={{ borderRadius: 3, maxWidth: 345 }}>
               <CardMedia
                 component="img"
-                height="140"
-                image="/static/images/cards/contemplative-reptile.jpg"
-                alt="green iguana"
+                sx={{ width: 100, margin: "auto", pt: "10px" }}
+                image={GraphIcon}
+                alt="Live from space album cover"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  SIEM Growth
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Enterprises that are implementing Security Information and
+                  Event Management (SIEM) realize the importance of visibility
+                  into the mainframe.
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Grid item xs={2} sm={3} md={3}>
+            <Card elevation="6" sx={{ borderRadius: 3, maxWidth: 345 }}>
+              <CardMedia
+                component="img"
+                sx={{ width: 100, margin: "auto", pt: "10px" }}
+                image={MainframeIcon}
+                alt="Live from space album cover"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -96,17 +98,15 @@ export default function TitlebarBelowImageList() {
                   Enterprises are struggling to find and keep zOS resources.
                 </Typography>
               </CardContent>
-            </CardActionArea>
-          </Card>
-        </Grid>
-        <Grid item xs={2} sm={3} md={3}>
-          <Card elevation="6" sx={{ borderRadius: 3, maxWidth: 345 }}>
-            <CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item xs={2} sm={3} md={3}>
+            <Card elevation="6" sx={{ borderRadius: 3, maxWidth: 345 }}>
               <CardMedia
                 component="img"
-                height="140"
-                image="/static/images/cards/contemplative-reptile.jpg"
-                alt="green iguana"
+                sx={{ width: 100, margin: "auto", pt: "10px" }}
+                image={TargetIcon}
+                alt="Live from space album cover"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -118,17 +118,15 @@ export default function TitlebarBelowImageList() {
                   on the mainframe.
                 </Typography>
               </CardContent>
-            </CardActionArea>
-          </Card>
-        </Grid>
-        <Grid item xs={2} sm={3} md={3}>
-          <Card elevation="6" sx={{ borderRadius: 3, maxWidth: 345 }}>
-            <CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item xs={2} sm={3} md={3}>
+            <Card elevation="6" sx={{ borderRadius: 3, maxWidth: 345 }}>
               <CardMedia
                 component="img"
-                height="140"
-                image="/static/images/cards/contemplative-reptile.jpg"
-                alt="green iguana"
+                sx={{ width: 100, margin: "auto", pt: "10px" }}
+                image={LockIcon}
+                alt="Live from space album cover"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -140,17 +138,19 @@ export default function TitlebarBelowImageList() {
                   into the mainframe.
                 </Typography>
               </CardContent>
-            </CardActionArea>
-          </Card>
+            </Card>
+          </Grid>
         </Grid>
-      </Grid>
+      </Box>
+      <Divider />
+
       <Box>
         <Grid pt="100px" container spacing={2}>
           <Grid xs={12} md={4}>
             <Card elevation="24">
               <CardMedia
                 component="img"
-                image={gear3}
+                image={MainframeIcon}
                 elevation="24"
                 outline="none"
               ></CardMedia>
@@ -189,7 +189,7 @@ export default function TitlebarBelowImageList() {
           <Card flex="end" elevation="24">
             <CardMedia
               component="img"
-              image={gear1}
+              image={MainframeIcon}
               elevation="24"
               outline="none"
             ></CardMedia>
@@ -201,7 +201,7 @@ export default function TitlebarBelowImageList() {
           <Card flex="end" elevation="24">
             <CardMedia
               component="img"
-              image={gear2}
+              image={MainframeIcon}
               elevation="24"
               outline="none"
             ></CardMedia>
@@ -230,6 +230,7 @@ export default function TitlebarBelowImageList() {
           </Typography>
         </Grid>
       </Grid>
+      <Divider />
     </Box>
   );
 }

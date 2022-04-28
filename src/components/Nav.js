@@ -17,7 +17,7 @@ import PropTypes from "prop-types";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import CssBaseline from "@mui/material/CssBaseline";
 import Link from "@mui/material/Link";
-import logo from "../pages/assets/images/Screenshot.png";
+import logo from "../pages/assets/images/logo.png";
 
 const ResponsiveAppBar = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -67,7 +67,7 @@ const ResponsiveAppBar = (props) => {
       <CssBaseline />
       <ElevationScroll {...props}>
         <AppBar elevation={0} style={{ ifbackground: "#fff" }}>
-          <Container maxWidth="md">
+          <Container maxWidth="lg">
             <Toolbar disableGutters>
               <Typography
                 variant="h6"
@@ -75,7 +75,7 @@ const ResponsiveAppBar = (props) => {
                 component="div"
                 sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
               >
-                <img src={logo} alt="My logo" height="40px" />
+                <img src={logo} alt="zSIEM logo" height="40px" />
               </Typography>
 
               <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -136,7 +136,13 @@ const ResponsiveAppBar = (props) => {
               >
                 <img src={logo} alt="My logo" height="50px" />
               </Typography>
-              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  display: { xs: "none", md: "flex" },
+                  position: "right",
+                }}
+              >
                 <Button
                   href="/"
                   onClick={handleCloseNavMenu}
@@ -162,7 +168,7 @@ const ResponsiveAppBar = (props) => {
 
               <Box sx={{ flexGrow: 0 }}>
                 <Button color="secondary" variant="contained">
-                  Buy Now
+                  Log In{" "}
                 </Button>
               </Box>
             </Toolbar>

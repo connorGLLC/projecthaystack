@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import MainBanner from "./components/MainBanner";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Modules from "./components/Modules";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
 import Fade from "@mui/material/Fade";
@@ -47,13 +48,14 @@ export default function Home() {
             variant="contained"
             size="large"
           >
-            Buy Now{" "}
+            Log In{" "}
           </Button>
         </Container>
       </Container>
 
       <Hero />
       <About />
+      {/* <Modules /> */}
     </>
   );
 }

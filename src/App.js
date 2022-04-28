@@ -10,8 +10,6 @@ import { Routes, Route } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
 
 import { grey } from "@mui/material/colors";
 
@@ -69,12 +67,12 @@ export default function App(ScrollToTop) {
         typography: {
           fontFamily: [
             "-apple-system",
-            "BlinkMacSystemFont",
-            "Helvetica Neue",
-            "Segoe UI",
             "Roboto",
-            "Arial",
             "sans-serif",
+            "Helvetica Neue",
+            "BlinkMacSystemFont",
+            "Segoe UI",
+            "Arial",
             '"Apple Color Emoji"',
             '"Segoe UI Emoji"',
             '"Segoe UI Symbol"',

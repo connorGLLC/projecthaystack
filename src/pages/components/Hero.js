@@ -34,7 +34,7 @@ function FeaturedPost() {
               <Card elevation="0" sx={{ maxWidth: 345, margin: "auto" }}>
                 <CardMedia
                   component="img"
-                  width="140"
+                  width="100"
                   image={Mainframe}
                   alt="z/OS mainframe"
                 />

@@ -32,29 +32,18 @@ export default function Home() {
         <Container align="center" maxWidth="sm">
           <Fade in={true} timeout={2000} style={{ transitionDelay: "1000ms" }}>
             <Box sx={{ mt: "10px" }}>
-              <Typography>
+              <Typography color="text.secondary">
                 The only security & compliance platform developed specifically
                 for the z/OS operating system.
               </Typography>
             </Box>
           </Fade>
-
-          <Button
-            color="secondary"
-            position="center"
-            href=""
-            target="blank"
-            sx={{ m: "10px" }}
-            variant="contained"
-            size="large"
-          >
-            Log In{" "}
-          </Button>
         </Container>
       </Container>
 
       <Hero />
       <About />
+
       {/* <Modules /> */}
     </>
   );

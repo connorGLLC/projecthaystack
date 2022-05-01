@@ -8,6 +8,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
+import Fade from "@mui/material/Fade";
 
 import Mainframe from "../assets/images/mainframe.png";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
@@ -19,8 +20,8 @@ function FeaturedPost() {
   const theme = useTheme();
 
   return (
-    <ParallaxProvider>
-      <Container align="center">
+    <Container align="center">
+      <Fade in={true} timeout={2000} style={{ transitionDelay: "100ms" }}>
         <Box
           sx={{
             width: "100%",
@@ -30,31 +31,18 @@ function FeaturedPost() {
           }}
         >
           <Box margin="auto" sx={{ maxWidth: "1080px" }}>
-            <Parallax y={[20, -30]}>
-              <Card elevation="0" sx={{ maxWidth: 345, margin: "auto" }}>
-                <CardMedia
-                  component="img"
-                  width="100"
-                  image={Mainframe}
-                  alt="z/OS mainframe"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Mainframe{" "}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    SubText{" "}
-                  </Typography>
-                  <Typography variant="subtitle1" color="Inherit">
-                    More subtext{" "}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Parallax>
+            <Card elevation="0" sx={{ maxWidth: 500, margin: "auto" }}>
+              <CardMedia
+                component="img"
+                width="100"
+                image={Mainframe}
+                alt="z/OS mainframe"
+              />
+            </Card>
           </Box>
         </Box>
-      </Container>
-    </ParallaxProvider>
+      </Fade>
+    </Container>
   );
 }
 

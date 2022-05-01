@@ -134,7 +134,7 @@ const ResponsiveAppBar = (props) => {
                 component="div"
                 sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
               >
-                <img src={logo} alt="My logo" height="50px" />
+                <img src={logo} alt="My logo" height="30px" />
               </Typography>
               <Box
                 sx={{
@@ -166,9 +166,9 @@ const ResponsiveAppBar = (props) => {
                 </Button>
               </Box>
 
-              <Box sx={{ flexGrow: 0 }}>
+              <Box sx={{ flexGrow: 0, size: "small" }}>
                 <Button color="secondary" variant="contained">
-                  Log In{" "}
+                  admin login{" "}
                 </Button>
               </Box>
             </Toolbar>

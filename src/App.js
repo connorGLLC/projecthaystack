@@ -47,7 +47,7 @@ export default function App(ScrollToTop) {
                 divider: grey[300],
                 text: {
                   primary: grey[900],
-                  secondary: grey[800],
+                  secondary: grey[600],
                 },
               }
             : {

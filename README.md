@@ -15,8 +15,8 @@ This is a portfolio I created using React with MUI components.
 
 ## Deployment
 
-This portfolio can be found here:
-https://connorcreated.com/
+This app can be found here:
+https://zsiem.herokuapp.com/
 
 ## Mock-Up
 
